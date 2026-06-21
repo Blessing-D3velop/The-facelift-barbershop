@@ -1,0 +1,126 @@
+.services {
+  width: 100%;
+  padding: 100px 48px;
+
+}
+
+/* ---------- Header ---------- */
+.services-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.services-eyebrow {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9a14a;
+  margin: 0 0 14px;
+}
+
+.services-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 20px;
+}
+
+.services-line {
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9a14a, transparent);
+}
+
+/* ---------- Grid ---------- */
+.services-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 56px 64px;
+}
+
+.service-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e2c275;
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(201, 161, 74, 0.25);
+}
+
+/* ---------- Row ---------- */
+.service-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.service-name {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #f2f2f2;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.service-tag {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.service-dots {
+  flex: 1;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
+  position: relative;
+  top: -4px;
+}
+
+.service-price {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #c9a14a;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* ---------- CTA ---------- */
+.services-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .services {
+    padding: 72px 24px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .services-title {
+    font-size: 30px;
+  }
+
+  .service-name {
+    font-size: 14px;
+  }
+}
