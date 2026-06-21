@@ -5,6 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>The Shift Barbershop | Your Ultimate Grooming Destination</title>
 
+      <link rel="icon" type="image/png" href="favicon.jpg">
+
         <link rel="stylesheet" href="styles/about.css">
         <link rel="stylesheet" href="styles/contact.css">
         <link rel="stylesheet" href="styles/home.css">
@@ -13,10 +15,6 @@
         <link rel="stylesheet" href="styles/shared.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/info.css">
-        <link rel="stylesheet" href="styles/pricing.css">
-        <link rel="stylesheet" href="styles/nails.css">
-        <link rel="stylesheet" href="styles/hours.css">
         <link rel="stylesheet" href="styles/cta.css">
   </head>
   <body>
@@ -211,8 +209,25 @@
         <div class="services-cta">
           <button class="btn-solid js-book-now"><span>Book Your Slot</span></button>
         </div>
+
+        <div class="contact-prompt">
+          <p class="contact-prompt-text">Can't find what you're looking for?</p>
+          <a 
+            href="https://wa.me/27664553995" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="whatsapp-link"
+          >
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-1.746-.873-2.892-1.557-4.043-3.534-.306-.527.306-.489.875-1.629.099-.198.05-.371-.05-.52-.099-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.01-.371-.012-.57-.012-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.05 3.133 4.967 4.27 2.916 1.137 2.916.758 3.91.66.793-.077 1.758-.808 2.005-1.586.247-.78.247-1.46.173-1.585-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12.004 2C6.486 2 2 6.486 2 12.004c0 1.96.555 3.797 1.515 5.34L2 22l4.778-1.485A9.95 9.95 0 0 0 12.004 22C17.522 22 22 17.514 22 12.004 22 6.486 17.522 2 12.004 2zm0 18.184a8.16 8.16 0 0 1-4.41-1.29l-.317-.198-3.078.957.974-2.998-.207-.327a8.143 8.143 0 0 1-1.31-4.324c0-4.504 3.665-8.17 8.17-8.17 4.504 0 8.17 3.666 8.17 8.17s-3.666 8.18-8.18 8.18z"/>
+            </svg>
+            <span>Chat with us on WhatsApp</span>
+          </a>
+        </div>
       </section>
 
+      <!-- Gallery Section -->
       <section class="gallery-section" id="gallery">
         <div class="gallery-header">
           <p class="gallery-eyebrow">Our Work</p>
@@ -246,12 +261,177 @@
 
         <p class="modal-counter js-modal-counter"></p>
       </div>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+      <div class="contact-header">
+        <p class="contact-eyebrow">Reserve Your Slot</p>
+        <h2 class="contact-title">Book an Appointment</h2>
+        <span class="contact-line"></span>
+      </div>
+
+      <div class="contact-container">
+        <form class="booking-form js-booking-form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Name</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Surname</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cellNumber">Cell Number</label>
+              <input type="tel" id="cellNumber" name="cellNumber" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="hairstyle">Hairstyle</label>
+            <select id="hairstyle" name="hairstyle" required>
+              <option value="" disabled selected>Select a hairstyle</option>
+              <option value="Cut, Taper or Mohawk">Cut, Taper or Mohawk</option>
+              <option value="Bald (Chiskop)">Bald (Chiskop)</option>
+              <option value="Trim">Trim</option>
+              <option value="Dye - Black">Dye - Black</option>
+              <option value="Dye - White/Grey">Dye - White/Grey</option>
+              <option value="Dye - Other Color">Dye - Other Color</option>
+              <option value="Cut & Dye (Black)">Cut & Dye (Black)</option>
+              <option value="Kids Cut">Kids Cut</option>
+              <option value="Kids Cut & Dye">Kids Cut & Dye</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Choose Your Barber</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="barber" value="Barber 1" required>
+                <span class="radio-custom"></span>
+                Barber 1
+              </label>
+
+              <label class="radio-option">
+                <input type="radio" name="barber" value="Barber 2">
+                <span class="radio-custom"></span>
+                Barber 2
+              </label>
+
+              <label class="radio-option">
+                <input type="radio" name="barber" value="Barber 3">
+                <span class="radio-custom"></span>
+                Barber 3
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookingDate">Date</label>
+              <input type="date" id="bookingDate" name="bookingDate" required>
+            </div>
+
+            <div class="form-group">
+              <label for="bookingTime">Time</label>
+              <input type="time" id="bookingTime" name="bookingTime" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-solid js-submit-btn">
+            <span>Book Now</span>
+          </button>
+
+          <p class="form-status js-form-status"></p>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <h4>Address</h4>
+            <p>85 Jeppe Street<br>Sunnyside, Pretoria<br>Ancore Apartments, 3rd Floor</p>
+          </div>
+
+          <div class="info-item">
+            <h4>Email</h4>
+            <p>shitbarbershp7@gmail.com</p>
+          </div>
+
+          <div class="info-item">
+            <h4>WhatsApp</h4>
+            <p>066 455 3995</p>
+          </div>
+
+          <div class="info-item">
+            <h4>Hours</h4>
+            <p>Mon – Sat: 8:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     </main>
 
+    <footer class="site-footer">
+      <div class="footer-container">
+
+        <div class="footer-brand">
+          <h3>THE SHIFT</h3>
+          <p>BARBERSHOP</p>
+          <p class="footer-tagline">Sharp looks. Sharper confidence.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <p class="js-home">Home</p>
+          <p class="js-about">About</p>
+          <p class="js-services">Services</p>
+          <p class="js-gallery">Gallery</p>
+          <p class="js-contact">Contact</p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>85 Jeppe Street, Sunnyside<br>Ancore Apartments, 3rd Floor<br>Pretoria</p>
+          <p>shitbarbershp7@gmail.com</p>
+          <p>066 455 3995</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 1.802c-3.15 0-3.502.012-4.737.068-2.245.103-3.299 1.172-3.401 3.4-.058 1.235-.069 1.587-.069 4.737s.012 3.502.069 4.737c.103 2.227 1.156 3.298 3.4 3.4 1.236.058 1.587.07 4.738.07 3.151 0 3.503-.012 4.738-.07 2.243-.102 3.298-1.171 3.4-3.4.058-1.235.07-1.587.07-4.737s-.012-3.502-.07-4.737c-.103-2.226-1.156-3.297-3.4-3.4-1.235-.057-1.587-.069-4.738-.069z"/><path d="M12 7.378a4.622 4.622 0 1 0 0 9.244 4.622 4.622 0 0 0 0-9.244zM12 14.4a2.4 2.4 0 1 1 0-4.8 2.4 2.4 0 0 1 0 4.8z"/><circle cx="17.338" cy="6.662" r="1.2"/></svg>
+            </a>
+            <a href="https://wa.me/27664553995" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-1.746-.873-2.892-1.557-4.043-3.534-.306-.527.306-.489.875-1.629.099-.198.05-.371-.05-.52-.099-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.01-.371-.012-.57-.012-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.05 3.133 4.967 4.27 2.916 1.137 2.916.758 3.91.66.793-.077 1.758-.808 2.005-1.586.247-.78.247-1.46.173-1.585-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2C6.486 2 2 6.486 2 12.004c0 1.96.555 3.797 1.515 5.34L2 22l4.778-1.485A9.95 9.95 0 0 0 12.004 22C17.522 22 22 17.514 22 12.004 22 6.486 17.522 2 12.004 2zm0 18.184a8.16 8.16 0 0 1-4.41-1.29l-.317-.198-3.078.957.974-2.998-.207-.327a8.143 8.143 0 0 1-1.31-4.324c0-4.504 3.665-8.17 8.17-8.17 4.504 0 8.17 3.666 8.17 8.17s-3.666 8.18-8.18 8.18z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.061C22 6.505 17.523 2 12 2S2 6.505 2 12.061c0 5.022 3.657 9.184 8.438 9.939v-7.03H7.898v-2.91h2.54V9.845c0-2.522 1.492-3.915 3.777-3.915 1.094 0 2.238.197 2.238.197v2.476h-1.26c-1.243 0-1.63.78-1.63 1.578v1.93h2.773l-.443 2.91h-2.33V22c4.78-.755 8.437-4.917 8.437-9.939z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span class="js-current-year"></span> The Shift Barbershop. All rights reserved.</p>
+      </div>
+    </footer>
+
       <script src="scripts/header.js"></script>
-      <script type="module" src="scripts/services.js"></script>
       <script type="module" src="scripts/gallery.js"></script>
       <script src="scripts/home.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
       <script src="scripts/contact.js"></script>
   </body>
 </html>

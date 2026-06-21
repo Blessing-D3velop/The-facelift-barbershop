@@ -1,0 +1,40 @@
+.contact-prompt {
+  text-align: center;
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(201, 161, 74, 0.15);
+}
+
+.contact-prompt-text {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 18px;
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #0e0e0e;
+  background: linear-gradient(135deg, #25D366, #1ebe5a);
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  color: #0e0e0e;
+}
